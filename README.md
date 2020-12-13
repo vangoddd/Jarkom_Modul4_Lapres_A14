@@ -9,11 +9,13 @@ Laporan Resmi Modul 4 Praktikum Jaringan Komputer
 ## Pembagian Subnet
 ![image](Assets/VLSM.png)
 
+![image](Assets/pembagianSubnet.jpg)
+
 ## Tree VLSM
 ![image](Assets/VLSMTree.PNG)
 
 ## Routing VLSM
-![image](Assets/routingVLSM.png)
+![image](Assets/routingVLSM.jpg)
 
 # Subnetting CIDR
 ## Pembagian Subnet
@@ -23,7 +25,7 @@ Laporan Resmi Modul 4 Praktikum Jaringan Komputer
 >![image](Assets/CIDRTree.PNG)
 
 ## Routing
->![image](Assets/RoutingCIDR.png)
+>![image](Assets/RoutingCIDR.jpg)
 
 ## UML
 >topologi.sh
