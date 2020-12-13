@@ -5,6 +5,16 @@ Laporan Resmi Modul 4 Praktikum Jaringan Komputer
 - Vachri Attala Putra       (05111840000043)
 #
 
+# Subnetting VLSM
+## Pembagian Subnet
+![image](Assets/VLSM.png)
+
+## Tree VLSM
+![image](Assets/VLSMTree.PNG)
+
+## Routing VLSM
+![image](Assets/routingVLSM.png)
+
 # Subnetting CIDR
 ## Pembagian Subnet
 >![image](Assets/CIDR.PNG)
@@ -343,4 +353,4 @@ xterm -T JOMBANG -e linux ubd0=JOMBANG,jarkom umid=JOMBANG eth0=daemon,,,switch6
   gateway 192.168.8.1
 
   ```
-# Subnetting VLSM
+
