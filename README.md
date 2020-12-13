@@ -25,7 +25,7 @@ Laporan Resmi Modul 4 Praktikum Jaringan Komputer
 >![image](Assets/CIDRTree.PNG)
 
 ## Routing
->![image](Assets/RoutingCIDR.jpg)
+>![image](Assets/routingCIDR.jpg)
 
 ## UML
 >topologi.sh
@@ -353,6 +353,41 @@ xterm -T JOMBANG -e linux ubd0=JOMBANG,jarkom umid=JOMBANG eth0=daemon,,,switch6
   address 192.168.8.2
   netmask 255.255.252.0
   gateway 192.168.8.1
-
+  ```
+- Setting Routing
+  - Surabaya
+  ```
+  route add -net 10.151.73.124 netmask 255.255.255.252 gw 192.168.32.2
+  route add -net 192.168.128.0 netmask 255.255.192.0 gw 192.168.192.2
+  route add -net 192.168.0.0 netmask 255.255.224.0 gw 192.168.32.2
+  ```
+  - Pasuruan
+  ```
+  route add -net 192.168.128.0 netmask 255.255.248.0 gw 192.168.144.2
+  route add -net 192.168.128.0 netmask 255.255.240.0 gw 192.168.144.2
+  route add -net 0.0.0.0 netmask 0.0.0.0 default gw 192.168.192.1
+  ```
+  - Probolinggo
+  ```
+  route add -net 0.0.0.0 netmask 0.0.0.0 default gw 192.168.144.1
+  ```
+  - Batu
+  ```
+  route add -net 0.0.0.0 netmask 0.0.0.0 default gw 192.168.32.1
+  route add -net 192.168.18.0 netmask 255.255.255.240 gw 192.168.16.2
+  route add -net 192.168.8.0 netmask 255.255.255.252 gw 192.168.0.2
+  ```
+  - Madiun
+  ```
+  route add -net 0.0.0.0 netmask 0.0.0.0 default gw 192.168.16.1
+  ```
+  - Kediri
+  ```
+  route add -net 0.0.0.0 netmask 0.0.0.0 default gw 192.168.0.1
+  route add -net 192.168.8.0 netmask 255.255.252.0 gw 192.168.4.1
+  ```
+  - Blitar
+  ```
+  route add -net 0.0.0.0 netmask 0.0.0.0 default gw 192.168.4.2
   ```
 
