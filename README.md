@@ -232,4 +232,115 @@ xterm -T JOMBANG -e linux ubd0=JOMBANG,jarkom umid=JOMBANG eth0=daemon,,,switch6
   address 192.168.8.1
   netmask 255.255.252.0
   ```
+  - Sampang
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.64.2
+  netmask 255.255.252.0
+  gateway 192.168.64.1
+  ```
+  - Bondowoso
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.136.2
+  netmask 255.255.255.128
+  gateway 192.168.136.1
+  ```
+  - Jember
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.132.1
+  netmask 255.255.248.0
+  gateway 192.168.128.1
+  ```
+  - Banyuwangi
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.128.2
+  netmask 255.255.248.0
+  gateway 192.168.128.1
+  ```
+  - Sidoarjo
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.160.2
+  netmask 255.255.252.0
+  gateway 192.168.160.1
+  ```
+  - Lumajang
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.4.3
+  netmask 255.255.255.0
+  gateway 192.168.4.2
+  ```
+  - Jombang
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.16.3
+  netmask 255.255.254.0
+  gateway 192.168.16.1
+  ```
+  - Nganjuk
+  ```
+   auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.20.2
+  netmask 255.255.252.0
+  gateway 192.168.20.1
+  ```
+  - Bojonegoro
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.18.2
+  netmask 255.255.255.240
+  gateway 192.168.18.1
+  ```
+  - Tulungagung
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.8.2
+  netmask 255.255.252.0
+  gateway 192.168.8.1
+
+  ```
 # Subnetting VLSM
