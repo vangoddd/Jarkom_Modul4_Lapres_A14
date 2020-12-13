@@ -60,18 +60,176 @@ xterm -T NGANJUK -e linux ubd0=NGANJUK,jarkom umid=NGANJUK eth0=daemon,,,switch1
 xterm -T BOJONEGORO -e linux ubd0=BOJONEGORO,jarkom umid=BOJONEGORO eth0=daemon,,,switch5 mem=64M &
 xterm -T JOMBANG -e linux ubd0=JOMBANG,jarkom umid=JOMBANG eth0=daemon,,,switch6 mem=64M &
 ```
->Setting interface
-Mojokerto
-```
-auto lo
-iface lo inet loopback
+- Setting interface
+  - Mojokerto
+  ```
+  auto lo
+  iface lo inet loopback
 
-auto eth0
-iface eth0 inet static
-address 10.151.73.122
-netmask 255.255.255.252
-gateway 10.151.73.121
+  auto eth0
+  iface eth0 inet static
+  address 10.151.73.122
+  netmask 255.255.255.252
+  gateway 10.151.73.121
 
-```
+  ```
+  - Malang
+  ```
+  auto lo
+  iface lo inet loopback
 
+  auto eth0
+  iface eth0 inet static
+  address 10.151.73.126
+  netmask 255.255.255.252
+  gateway 10.151.73.125
+
+  ```
+  - Surabaya
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 10.151.72.62
+  netmask 255.255.255.252
+  gateway 10.151.72.61
+
+  auto eth1
+  iface eth1 inet static
+  address 192.168.64.1
+  netmask 255.255.252.0
+
+  auto eth2
+  iface eth2 inet static
+  address 192.168.192.1
+  netmask 255.255.255.252
+  auto eth3
+  
+  iface eth3 inet static
+  address 192.168.32.1
+  netmask 255.255.255.252
+
+  auto eth4
+  iface eth4 inet static
+  address 10.151.73.121
+  netmask 255.255.255.252
+  ```
+  - Pasuruan
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.144.1
+  netmask 255.255.255.252
+
+  auto eth1
+  iface eth1 inet static
+  address 192.168.192.2
+  netmask 255.255.255.252
+  gateway 192.168.192.1
+  ```
+  - Probolinggo
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.136.1
+  netmask 255.255.255.128
+
+  auto eth1
+  iface eth1 inet static
+  address 192.168.128.1
+  netmask 255.255.248.0
+
+  auto eth2
+  iface eth2 inet static
+  address 192.168.144.2
+  netmask 255.255.255.252
+  gateway 192.168.144.1
+  ```
+  - Batu
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.32.2
+  netmask 255.255.255.252
+  gateway 192.168.32.1
+
+  auto eth1
+  iface eth1 inet static
+  address 192.168.0.1
+  netmask 255.255.255.252
+
+  auto eth2
+  iface eth2 inet static
+  address 192.168.20.1
+  netmask 255.255.252.0
+
+  auto eth3
+  iface eth3 inet static
+  address 192.168.16.1
+  netmask 255.255.254.0
+  ```
+  - Madiun
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.16.2
+  netmask 255.255.254.0
+  gateway 192.168.16.1
+
+  auto eth1
+  iface eth1 inet static
+  address 192.168.18.1
+  netmask 255.255.255.240
+  ```
+  - Kediri
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.0.2
+  netmask 255.255.255.252
+  gateway 192.168.0.1
+
+  auto eth1
+  iface eth1 inet static
+  address 192.168.4.2
+  netmask 255.255.255.0
+
+  auto eth2
+  iface eth2 inet static
+  address 10.151.73.125
+  netmask 255.255.255.252
+  ```
+  - Blitar
+  ```
+  auto lo
+  iface lo inet loopback
+
+  auto eth0
+  iface eth0 inet static
+  address 192.168.4.1
+  netmask 255.255.255.0
+  gateway 192.168.4.2
+
+  auto eth1
+  iface eth1 inet static
+  address 192.168.8.1
+  netmask 255.255.252.0
+  ```
 # Subnetting VLSM
